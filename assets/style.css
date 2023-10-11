@@ -8,6 +8,7 @@
 html{
     font-size: 62.5%;
     font-family: 'Beckman', sans-serif;
+    overflow-x: hidden;
 }
 
 :root {
@@ -24,7 +25,6 @@ body{
     background-color: var(--background);
     color: var(--font);
     font-size: 1.6rem;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -57,6 +57,7 @@ h2{
 h3{
     font-size: 3rem;
     color: var(--heading-gray);
+    margin-bottom: 0;
 }
 
 h4{
@@ -77,26 +78,26 @@ p, li{
     border: solid 5px var(--button);
     color: var(--button);
     padding: 1rem 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration: none;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
     display: flex;
     align-items: center;
     width: fit-content;
     gap: 2rem;
+    background: #0A192F;
+    box-shadow:  20px 20px 60px #050d19,
+             -20px -20px 60px #0f2545;
+    
 }
 
 .button:hover {
-        background-color: var(--button);
-        color: var(--background);
-        font-weight: bold;
+        scale: 1.05;
       }
 
-
-
-.button svg{
-    color: var(--button);
-}
+.button:active {
+        scale: 1;
+      }
 
 .center{
     display: flex;
@@ -110,6 +111,7 @@ p, li{
 footer{
     background-color: var(--background);
     width: 100%;
+    border-top: solid 4px var(--subtle-gray);
 }
 
 footer h2 {
@@ -161,13 +163,13 @@ nav{
     height: 4rem;
 }
 
-nav ol{
+nav ul{
     display: flex;
     list-style: none;
     z-index: 10;
 }
 
-nav ol a{
+nav ul a{
     padding: 0 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -181,7 +183,7 @@ nav ol a{
 
 
 .hero-text{
-    margin-top: 15rem;
+    padding-top: 5rem;
     position: relative;
 }
 
@@ -252,7 +254,7 @@ nav ol a{
     }
 
 .skills-section {
-    display: flex;
+display: flex;
   justify-content: center;
   align-items: center;
 }    
@@ -289,8 +291,10 @@ nav ol a{
 .skill{
         border: solid 4px var(--button);
         padding: 2rem 1rem 0 1rem;
-        border-radius: 10px;
-        
+        border-radius: 5px;
+background: #0A192F;
+box-shadow:  20px 20px 60px #050d19,
+             -20px -20px 60px #0f2545;
     }
 
     .flip-card {
@@ -328,7 +332,7 @@ nav ol a{
         background-color: var(--button);
         color: var(--background);
         transform: rotateY(180deg);
-        border-radius: 10px;
+        border-radius: 5px;
       }
 
       .stars{
@@ -353,9 +357,16 @@ nav ol a{
 .case-study{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 20rem 0;
     justify-content: space-between;
     gap: 5rem;
+    padding: 3rem;
+    border-radius: 5px;
+    
+background: #0A192F;
+box-shadow:  20px 20px 60px #050d19,
+             -20px -20px 60px #0f2545;
 }
 
 .case-study h3{
@@ -369,15 +380,11 @@ nav ol a{
 }
 
 .case-study article{
-    width: 50%;
+    width: 45%;
 }
 
 .case-study img{
-    width: 50%;
-}
-
-.case-study .spline{
-    width: 50%;
+    width: 45%;
 }
 
 .used-skills-container{
@@ -388,8 +395,9 @@ nav ol a{
 .used-skills{
     background-color: var(--subtle-gray);
     padding-inline: 1rem;
-    border-radius: 50px;
+    border-radius: 5px;
     margin-inline: 0.2rem;
+    margin: 4px 4px
 }
 
 /* Om Louise */
@@ -400,6 +408,7 @@ nav ol a{
 
 .om-louise{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -410,6 +419,11 @@ nav ol a{
 
 .om-louise-text{
     width: 50%;
+    padding: 0 2rem 2rem 2rem;
+    border-radius: 5px;
+    background: #0A192F;
+    box-shadow:  20px 20px 60px #050d19,
+                 -20px -20px 60px #0f2545;
 }
 
 .om-louise ul{
@@ -470,9 +484,9 @@ nav ol a{
 
 .single-case .button {
     background-color: var(--background);
+    color: var(--button);
+    margin-top: 3rem;
 }
-
-
 
 .single-casestudy-top{
     margin-top: 3rem;
@@ -544,3 +558,126 @@ td:nth-child(odd) {
     overflow: hidden;
   }
 
+  .timeline {
+    position: relative;
+    width: 100%;
+    height: 0.8rem;
+    background: var(--button);
+    bottom: -0.8rem;
+    left: 0;
+    animation: progressbar linear;
+    animation-timeline: scroll();
+  }
+  
+  @keyframes progressbar {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 40em){
+    
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+    
+    p{
+        font-size: 1.7rem;
+    }
+
+    main{
+        margin: 3rem;
+    }
+
+    .underrubrik{
+        max-width: 100%;
+    }
+
+    .hero-text{
+        padding-top: 15rem;
+    }
+
+    .hero spline-viewer{
+        top: -25rem;
+        left: 5rem;
+    }
+
+    .text-rotate-container{
+        overflow: hidden;
+        position: relative;
+        height: 4rem;    
+}
+
+.text-rotate-items {
+    color: var(--font);
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    animation: move 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+  }
+
+  @keyframes move {
+    0%  { top: 0rem; }
+    20% { top: -4.5rem; }
+    40% { top: -9.1rem; }
+    60% { top: -13.7rem; }
+    80% { top: -18.5rem; }
+    }
+    
+
+.om-louise-text{
+    width: 100%; 
+    padding-bottom: 10rem;
+} 
+
+.spacing{
+    margin: 0 0 0 0;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    }
+
+    .case-study article{
+        width: 100%;
+    }
+    
+    .case-study{
+        margin-top: 5rem;
+    }
+
+    .case-study img{
+        width: 100%;
+    }
+
+    .case-study{
+        margin: 10rem 0;
+    }
+
+    .contact-section{
+        margin: 3rem;
+        width: 90%;
+        
+    }
+}
