@@ -143,16 +143,17 @@ footer a {
 /* Header */
 
 header{
-    margin: auto;
+    padding: 1rem auto;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
+    height: 6rem;
 }
 
+
 nav{
-    margin: auto;
-    max-width: 1400px;
+    padding: 0 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +161,7 @@ nav{
 }
 
 .logo{
-    height: 4rem;
+    max-height: 4rem;
 }
 
 nav ul{
@@ -176,6 +177,20 @@ nav ul a{
     color: var(--heading-white);
     font-family: "Poppins", sans-serif;
     font-weight: bold; 
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 /* Hero */
@@ -223,10 +238,10 @@ nav ul a{
 
   @keyframes move {
     0%  { top: 0rem; }
-    20% { top: -8.5rem; }
-    40% { top: -17rem; }
-    60% { top: -25.5rem; }
-    80% { top: -34rem; }
+    20% { top: -8rem; }
+    40% { top: -16rem; }
+    60% { top: -24rem; }
+    80% { top: -32rem; }
     }
 
     .plus{
@@ -680,4 +695,62 @@ td:nth-child(odd) {
         width: 90%;
         
     }
+
+   nav{
+    padding: 0 2rem 1rem 2rem;
+   }
+
+        .nav-menu {
+            position: fixed;
+            top:0;
+            left: 100%;
+            flex-direction: column;
+            background-color: var(--background);
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            z-index: -1;
+        }
+    
+        .nav-menu.active {
+            left: 0;
+            margin-top: 0;
+        }
+    
+        .nav-item {
+            margin: 2.5rem 0;
+        }
+
+        .logo{
+            padding: 1rem 0 0 1rem;
+        }
+    
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            padding: 1rem 1rem 0 0;
+        }
+
+        .bar{
+            background-color: var(--heading-white);
+            
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+
+    
 }
