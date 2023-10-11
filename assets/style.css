@@ -11,11 +11,13 @@ html{
 }
 
 :root {
-    --font: #F2F2F2;
+    --font: #848EAC;
     --background: #0A192F;
     --button: #64FFDA;
     --button-font: #64FFDA;
     --subtle-gray: #1d2f4a;
+    --heading-gray: #c7d1f1;
+    --heading-white: #FFFFFF;
   }
 
 body{
@@ -43,22 +45,30 @@ h1{
     padding: 0;
     margin: 0;
     font-weight: 800;
+    color: var(--heading-white);
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
-    color: var(--font);
+    color: var(--heading-gray);
 }
 
 h3{
+    font-size: 3rem;
+    color: var(--heading-gray);
+}
 
+h4{
     font-size: 2rem;
+    color: var(--heading-gray);
+    font-weight: 500;
 }
 
 p, li{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
     color: var(--font);
 }
 
@@ -157,7 +167,7 @@ nav ol a{
     padding: 0 2rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--font);
+    color: var(--heading-white);
     font-family: "Poppins", sans-serif;
     font-weight: bold; 
 }
@@ -167,7 +177,7 @@ nav ol a{
 
 
 .hero-text{
-    margin-top: 10rem;
+    margin-top: 15rem;
     position: relative;
 }
 
@@ -234,18 +244,27 @@ nav ol a{
 
     .skills-container{
         display: flex;
-        justify-content: flex-end;
+
     }
 
-    
+.skills-section {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}    
+
+.skills-section article{
+    width: 100%;
+}   
 
 .skills{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    width: 50%;
+    width: 70%;
+    margin: auto;
     }
 
 .skills img{
@@ -329,9 +348,19 @@ nav ol a{
 .case-study{
     display: flex;
     align-items: center;
-    margin: 15rem 0;
+    margin: 20rem 0;
     justify-content: space-between;
     gap: 5rem;
+}
+
+.case-study h3{
+    margin-top: 5px;
+    color: var(--heading-white);
+}
+
+.case-study h4{
+    margin: 0;
+    color: var(--heading-gray);
 }
 
 .case-study article{
@@ -376,6 +405,28 @@ nav ol a{
 
 .om-louise-text{
     width: 50%;
+}
+
+.om-louise ul{
+    list-style: none;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.om-louise li{
+    display: flex;
+    align-items: center;
+}
+
+.like-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.om-louise svg{
+    padding-right: 1rem;
+    max-width: 2.2rem;
 }
 
 /* Single case-study */
