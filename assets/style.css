@@ -76,10 +76,14 @@ p, li{
 .button{
     border: solid 5px var(--button);
     color: var(--button);
-    padding: 1.5rem 7rem;
+    padding: 1rem 2rem;
     border-radius: 10px;
     text-decoration: none;
     transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 2rem;
 }
 
 .button:hover {
@@ -269,13 +273,17 @@ nav ol a{
 
 .skills img{
         height: 5rem;
-        width: 100%;
+        
     }
 
 .skills p{
         text-align: center;
         color: var(--button);
         
+    }
+
+    .flip-card-back p{
+        color: var(--background);
     }
 
 .skill{
@@ -288,13 +296,11 @@ nav ol a{
     .flip-card {
         cursor: pointer;
         perspective: 1000px;
-        animation: pulse 1s alternate infinite ease-in-out;
         height: 14rem;
       }
 
-      @keyframes pulse {
-        0%   {transform: scale(.95);}
-        100% {transform: scale(1);}
+      .flip-card h4{
+        color: var(--background);
       }
       
       .flip-card-inner {
@@ -304,7 +310,6 @@ nav ol a{
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       }
       
       .flip-card:hover .flip-card-inner {
@@ -329,7 +334,7 @@ nav ol a{
       .stars{
         display: flex;
         justify-content: center;
-        color: #FFCD3C;
+        color: var(--background);
       }
 
       .stars img{
@@ -432,7 +437,7 @@ nav ol a{
 /* Single case-study */
 
 .single-case{
-    background-color: var(--font);
+    background-color: var(--heading-white);
     color: var(--background);
 }
 
