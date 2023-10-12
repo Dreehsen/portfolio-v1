@@ -19,6 +19,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+// Sticky-nav med farve on scroll
 
 document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", function() {
