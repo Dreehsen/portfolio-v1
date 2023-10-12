@@ -12,13 +12,13 @@ html{
 }
 
 :root {
-    --font: #848EAC;
-    --background: #0A192F;
+    --font: #ced4e6;
+    --background: #10274b;
     --button: #64FFDA;
     --button-font: #64FFDA;
-    --subtle-gray: #1d2f4a;
-    --heading-gray: #c7d1f1;
-    --heading-white: #FFFFFF;
+    --subtle-gray: #324d74;
+    --heading-gray: #e4e2e2;
+    --heading-white: #fbf9f9;
   }
 
 body{
@@ -37,6 +37,7 @@ main{
 
 h1, h2, h3{
     font-family: 'Beckman', sans-serif;
+    color: var(--heading-white);
     
 }
 
@@ -45,24 +46,21 @@ h1{
     padding: 0;
     margin: 0;
     font-weight: 800;
-    color: var(--heading-white);
 }
 
 h2{
     font-size: 4rem;
     margin: 0;
-    color: var(--heading-gray);
 }
 
 h3{
     font-size: 3rem;
-    color: var(--heading-gray);
     margin-bottom: 0;
 }
 
 h4{
     font-size: 2rem;
-    color: var(--heading-gray);
+    color: var(--heading-white);
     font-weight: 500;
 }
 
@@ -111,7 +109,6 @@ p, li{
 footer{
     background-color: var(--background);
     width: 100%;
-    border-top: solid 4px var(--subtle-gray);
 }
 
 footer h2 {
@@ -130,7 +127,10 @@ footer a {
     text-align: left;
     width: 45%;
     margin: auto;
-    padding-top: 4rem;
+    padding: 4rem;
+    border-radius: 50px;
+    box-shadow:  20px 20px 60px #050d19,
+             -20px -20px 60px #0f2545;
     
 }
 
@@ -377,9 +377,9 @@ box-shadow:  20px 20px 60px #050d19,
     justify-content: space-between;
     gap: 5rem;
     padding: 3rem;
-    border-radius: 5px;
+    border-radius: 50px;
     
-background: #0A192F;
+background: var(--background);
 box-shadow:  20px 20px 60px #050d19,
              -20px -20px 60px #0f2545;
 }
@@ -410,7 +410,7 @@ box-shadow:  20px 20px 60px #050d19,
 .used-skills{
     background-color: var(--subtle-gray);
     padding-inline: 1rem;
-    border-radius: 5px;
+    border-radius: 50px;
     margin-inline: 0.2rem;
     margin: 4px 4px
 }
@@ -435,8 +435,8 @@ box-shadow:  20px 20px 60px #050d19,
 .om-louise-text{
     width: 50%;
     padding: 0 2rem 2rem 2rem;
-    border-radius: 5px;
-    background: #0A192F;
+    border-radius: 50px;
+    background: var(--background);
     box-shadow:  20px 20px 60px #050d19,
                  -20px -20px 60px #0f2545;
 }
@@ -465,7 +465,7 @@ box-shadow:  20px 20px 60px #050d19,
 
 /* Single case-study */
 
-.single-case{
+/* .single-case{
     background-color: var(--heading-white);
     color: var(--background);
 }
@@ -501,7 +501,7 @@ box-shadow:  20px 20px 60px #050d19,
     background-color: var(--background);
     color: var(--button);
     margin-top: 3rem;
-}
+} */
 
 .single-casestudy-top{
     margin-top: 3rem;
@@ -542,7 +542,7 @@ td:nth-child(odd) {
   }
 
   tr:nth-child(odd){
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(42, 6, 103);
   }
 
   .single-casestudy-text-box{
@@ -578,7 +578,7 @@ td:nth-child(odd) {
     width: 100%;
     height: 0.8rem;
     background: var(--button);
-    bottom: -0.8rem;
+    bottom: 0rem;
     left: 0;
     animation: progressbar linear;
     animation-timeline: scroll();
@@ -693,7 +693,7 @@ td:nth-child(odd) {
     .contact-section{
         margin: 3rem;
         width: 90%;
-        
+        border-radius: 50px;
     }
 
    nav{
@@ -708,7 +708,6 @@ td:nth-child(odd) {
             background-color: var(--background);
             width: 100%;
             height: 100%;
-            border-radius: 10px;
             text-align: center;
             transition: 0.3s;
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
