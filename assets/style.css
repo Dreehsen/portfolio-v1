@@ -13,7 +13,7 @@ html{
 
 :root {
     --font: #ced4e6;
-    --background: #10274b;
+    --background: #072b56;
     --button: #64FFDA;
     --button-font: #64FFDA;
     --subtle-gray: #324d74;
@@ -83,7 +83,6 @@ p, li{
     align-items: center;
     width: fit-content;
     gap: 2rem;
-    background: #0A192F;
     box-shadow:  20px 20px 60px #050d19,
              -20px -20px 60px #0f2545;
     
@@ -430,7 +429,14 @@ box-shadow:  20px 20px 60px #050d19,
 
 .om-louise spline-viewer{
     max-width: 500px;
+    padding-left: 5rem;
 }
+
+.om-louise-spline-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5rem;}
 
 .om-louise-text{
     width: 50%;
@@ -542,7 +548,7 @@ td:nth-child(odd) {
   }
 
   tr:nth-child(odd){
-    background-color: rgb(42, 6, 103);
+    background-color: rgb(0, 2, 72);
   }
 
   .single-casestudy-text-box{
@@ -775,4 +781,8 @@ td:nth-child(odd) {
             max-width: 100%;
             margin-bottom: 7rem;
           }
+
+          .om-louise spline-viewer{
+            padding-left: 0rem;
+        }
 }
