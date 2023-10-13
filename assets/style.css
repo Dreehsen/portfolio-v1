@@ -75,7 +75,7 @@ p, li{
 .button{
     border: solid 5px var(--button);
     color: var(--button);
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     border-radius: 5px;
     text-decoration: none;
     transition: 0.2s ease;
@@ -501,14 +501,9 @@ box-shadow:  20px 20px 60px #050d19,
     color: var(--background);
 }
 
-.single-case p {
-    color: var(--background);
-}
 
-.single-case h1{
-    font-size: 5rem;
-    color: var(--background);
-}
+
+
 
 .single-case .button {
     background-color: var(--background);
@@ -521,6 +516,32 @@ box-shadow:  20px 20px 60px #050d19,
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.single-case h1{
+    font-size: 5rem;
+}
+
+.single-case-study-top-h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.single-case h2 {
+    font-size: 3rem;
+}
+
+.single-case p {
+    padding: 0.8rem 0;
+}
+
+figcaption{
+    font-family: Poppins, sans-serif;
+    font-style: italic
+}
+
+.white-bg{
+    background-color: var(--heading-white);
 }
 
 .single-casestudy-top article{

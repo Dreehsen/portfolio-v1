@@ -58,7 +58,10 @@
         <h1>Sejr og Davidsens dyrepension og -internat</h1>
         <div class="single-casestudy-top">
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quam, quae, veniam doloribus error eius necessitatibus, aliquid quis ratione eum deleniti corporis inventore aliquam dicta iure vitae fugiat sapiente. Explicabo?</p>
+                <p>I forbindelse med valgfaget frontend-udvikling på 3. semester, skulle vi udvikle et skræddersyet Wordpress theme til et fiktivt dyreinternat.</p>
+                <p>Det var en spændende udfordring, fordi det var første gang, jeg stiftede bekendtskab med PHP, som siden skule kodes i.</p>
+                <p>I dette projekt var designet sekundært, da valgfaget handlede om kode og relevant opsætning med bl.a. custom post types til kunden.</p>
+                <br>
                 <a class="button" href="https://sejrdavidsen.mathiasskovbo.dk/">Se live version</a>
             </article>
             <div class="table-container">
@@ -90,21 +93,22 @@
         </div>
         <img src="assets/images/Mockup-sejr.png" alt="">
         <div class="single-casestudy-text-box">
-            <h2>ERD-model</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta non nesciunt placeat asperiores beatae sint ipsum, quas numquam provident esse quis ratione maiores quibusdam quasi id sit recusandae iusto ex!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ratione, ex sunt rem, iure consequatur enim aut quas excepturi, neque ullam. Ullam, eius perferendis earum porro provident beatae deleniti ex!</p>
-        </div>
-        <img src="assets/images/sejr-erd.png" alt="">
-        <div class="single-casestudy-text-box">
             <h2>Informationsarkitektur</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta non nesciunt placeat asperiores beatae sint ipsum, quas numquam provident esse quis ratione maiores quibusdam quasi id sit recusandae iusto ex!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ratione, ex sunt rem, iure consequatur enim aut quas excepturi, neque ullam. Ullam, eius perferendis earum porro provident beatae deleniti ex!</p>
-        </div>
+            <p>Årojektets scope var at lave 5-6 sider, som vi selv skulle udvælge.</p>
+            <p>Vi havde fået udleveret materiale om virksomhedens ønsker og tre personas, og ud fra de informationer, vi der kunne læse os til, lavede vi et content sitemap for det fulde site.</p>
+            <p>Herefter udvalgte vi de 5-6 sider, som vi mente var mest spændende ift. koden.</p>
+            <p>Valget faldt bl.a. på forsiden, en oversigt over dyr, der var tilgængelige for adoption, og en blogside, da de sider gav os mulighed for at lave og bruge custom post types, som er skræddersyede elementer i backenden i Wordpress, som giver kunden mulighed for at oprette specifikke elementer.</p>
+           
+            </div>
+        <div class="white-bg">
         <img src="assets/images/sejr-sitemap.png" alt="">
+         </div>
         <div class="single-casestudy-text-box">
-            <h2>Design</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta non nesciunt placeat asperiores beatae sint ipsum, quas numquam provident esse quis ratione maiores quibusdam quasi id sit recusandae iusto ex!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ratione, ex sunt rem, iure consequatur enim aut quas excepturi, neque ullam. Ullam, eius perferendis earum porro provident beatae deleniti ex!</p>
+            <h2>Et design med svg'er</h2>
+            <p>Selv om designet var sekundært i dette projekt, skulle det stadig laves, og i gruppen blev vi enige om at lave et design, der skilte sig ud fra tidligere projekter og eksperimentere med brugen af svg'er som sektionsskillere.</p>
+            <p>Det gjorde vi, fordi det gav os muligheden for at lære noget nyt ift. kodedelen.</p>
+            <p>Valget faldt på et farverigt design med en hero, hvor der var to CTA-indgange til virksomhen, som bestod af to dele: et dyreinternat og en kommerciel dyrepension.</p>
+            <p>Vi startede designprocessen ved at skitsere på papir og derefter øge fidelity med en wireframe og efterfølgende hifi-mockup i Adobe XD.</p>
         </div>
         <div class="image-gallery">
             <figure>
@@ -117,21 +121,33 @@
                 <figcaption>Mockup.</figcaption>
             </figure>
         </div>
-
         <div class="single-casestudy-text-box">
-            <h2>Indholdsudvikling</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta non nesciunt placeat asperiores beatae sint ipsum, quas numquam provident esse quis ratione maiores quibusdam quasi id sit recusandae iusto ex!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ratione, ex sunt rem, iure consequatur enim aut quas excepturi, neque ullam. Ullam, eius perferendis earum porro provident beatae deleniti ex!</p>
+            <h2>ERD-model</h2>
+            <p>I valgfaget havde vi også for første gang stiftet bekendt skab med databaser og node.js, og vi skulle udarbejde en ERD-model for den relationelle database.</p>
+        </div>
+        
+        <img src="assets/images/sejr-erd.png" alt="">
+        <div class="single-casestudy-text-box">
+            <h2>Indholdsudvikling med custom post types og ACF</h2>
+            <p>Nu begyndte den spændende del af projektet: Arbejdet med Wordpress.</p>
+            <p>Vi havde tidligere brugt Wordpress som headless CMS, så vi kendte til advanced custom fields i forvejen, men det var første gang, vi skulle oprette custom post types og lave et helt theme med PHP.</p>
+            <p>Vi besluttede at oprette custom post types for adoptionsdyrene og for blogindlægenne, da det ville give kunden et overskueligt og brugervenligt CMS, hvor det efterfølgende var muligt at lave brugerroller til medarbejderne med særskilt adgang til de dele af siden, de skulle kunne redigere og skrive til. </p>
+        </div>
+
+        <div class="image-gallery">
+            <figure>
+                <img src="assets/images/sejr-dyreoversigt.png" alt="Wireframe">
+                <figcaption>Oversigt over adoptionsdyrene (med search-funktion).</figcaption>
+            </figure>
+
+            <figure>
+                <img src="assets/images/sejr-enkeltdyr.png" alt="Wireframe">
+                <figcaption>Sideopbygningen for det enkelte adoptionsdyr.</figcaption>
+            </figure>
         </div>
 
         <div class="single-casestudy-text-box">
-            <h2>Advanced custom fields og Wordpress</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta non nesciunt placeat asperiores beatae sint ipsum, quas numquam provident esse quis ratione maiores quibusdam quasi id sit recusandae iusto ex!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ratione, ex sunt rem, iure consequatur enim aut quas excepturi, neque ullam. Ullam, eius perferendis earum porro provident beatae deleniti ex!</p>
-        </div>
-
-        <div class="single-casestudy-text-box">
-            <h2>Webudvikling med PHP</h2>
+            <h2>Den store udfordring: Webudvikling med PHP</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta non nesciunt placeat asperiores beatae sint ipsum, quas numquam provident esse quis ratione maiores quibusdam quasi id sit recusandae iusto ex!</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ratione, ex sunt rem, iure consequatur enim aut quas excepturi, neque ullam. Ullam, eius perferendis earum porro provident beatae deleniti ex!</p>
         </div>
