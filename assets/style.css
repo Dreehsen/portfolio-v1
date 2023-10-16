@@ -476,6 +476,41 @@ box-shadow:  20px 20px 60px #050d19,
     max-width: 2.2rem;
 }
 
+/* Social media vertical bar */
+
+.verticalBox {
+    position: fixed;
+    bottom: 0;
+    left: 2%;
+  }
+  
+  .verticalBox .logo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20rem;
+  }
+  
+  .verticalBox .logo svg {
+    color: var(--button);
+    transition: 0.3s;
+    padding-top: 10px;
+  }
+  
+  .verticalBox .logo svg:hover {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    scale: 1.2;
+  }
+  
+  .verticalBox hr {
+    background-color: var(--button);
+    color: var(--button);
+    height: 20rem;
+    width: 1px;
+    margin: auto;
+    border: none;
+  }
+
 /* Single case-study */
 
 /* .single-case{
