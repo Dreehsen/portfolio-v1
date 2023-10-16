@@ -67,10 +67,13 @@ h4{
 p, li{
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--font);
 }
 
+a{
+    color: var(--heading-gray);
+}
 
 .button{
     border: solid 5px var(--button);
@@ -171,11 +174,19 @@ nav ul{
 
 nav ul a{
     padding: 0 2rem;
-    text-decoration: none;
+    text-decoration: underline rgba(0, 0, 0, 0);
     text-transform: uppercase;
     color: var(--heading-white);
     font-family: "Poppins", sans-serif;
     font-weight: bold; 
+    transition: 0.3s ease-in-out;
+    transition: text-decoration-color color 0.3s;
+    text-underline-offset: 1rem;
+}
+nav ul a:hover{
+    color: var(--button);
+    text-decoration-color: var(--button);
+    
 }
 
 .hamburger {
@@ -487,7 +498,7 @@ box-shadow:  20px 20px 60px #050d19,
   .verticalBox .logo {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20rem;
+    padding-bottom: 13rem;
   }
   
   .verticalBox .logo svg {
@@ -513,39 +524,6 @@ box-shadow:  20px 20px 60px #050d19,
 
 /* Single case-study */
 
-/* .single-case{
-    background-color: var(--heading-white);
-    color: var(--background);
-}
-
-.single-case header{
-    background-color: var(--background);
-    margin-bottom: 5rem;
-}
-
-.single-case header a{
-    color: var(--font);
-}
-
-
-.single-case h2 {
-    color: var(--background);
-}
-
-.single-case h3 {
-    color: var(--background);
-}
-
-
-
-
-
-.single-case .button {
-    background-color: var(--background);
-    color: var(--button);
-    margin-top: 3rem;
-} */
-
 .single-casestudy-top{
     margin-top: 3rem;
     display: flex;
@@ -566,6 +544,10 @@ box-shadow:  20px 20px 60px #050d19,
     font-size: 3rem;
 }
 
+.single-case h3{
+    font-size: 1.8rem;
+}
+
 .single-case p {
     padding: 0.8rem 0;
 }
@@ -576,7 +558,8 @@ figcaption{
 }
 
 .white-bg{
-    background-color: var(--heading-white);
+    background: rgb(170,251,255);
+background: linear-gradient(90deg, rgba(170,251,255,1) 0%, rgba(196,247,231,1) 100%);
 }
 
 .single-casestudy-top article{
@@ -852,4 +835,26 @@ td:nth-child(odd) {
           .om-louise spline-viewer{
             padding-left: 0rem;
         }
+
+        .verticalBox {
+            position: static;
+          }
+          
+          .verticalBox .logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 4rem;
+          }
+          
+          .verticalBox .logo svg {
+            color: var(--button);
+            transition: 0.3s;
+            scale: 1.5;
+            
+          }
+          
+          .verticalBox hr {
+            display: none;
+          }
 }
