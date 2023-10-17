@@ -52,7 +52,7 @@ animateRotate.forEach((animateRotate) => {
       trigger: animateRotate,
     },
     y:100,
-    rotation: 60,
+    rotation: 160,
     ease: "power1.out",
     opacity: 0,
     duration: 1
