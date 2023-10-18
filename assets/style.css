@@ -181,7 +181,7 @@ footer a {
     padding-top: 4rem;
 }
 
-Header
+/* Header */
 
 header{
     padding: 1rem auto;
@@ -198,7 +198,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
+    z-index: 5;
 }
 
 .nav-logo{
@@ -831,7 +831,7 @@ max-height: 650px;
 
         .nav-menu {
             position: fixed;
-            top:-7rem;
+            top:0;
             left: 100%;
             flex-direction: column;
             background-color: var(--background);
