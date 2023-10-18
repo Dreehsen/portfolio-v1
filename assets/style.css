@@ -92,6 +92,17 @@ a{
     
 }
 
+.button-no-border{
+    color: var(--button);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 2rem;
+}
+
 img{
     border-radius: 10px;
 }
@@ -101,6 +112,14 @@ img{
       }
 
 .button:active {
+        scale: 1;
+      }
+
+.button-no-border:hover {
+        scale: 1.05;
+      }
+
+.button-no-border:active {
         scale: 1;
       }
 
@@ -170,15 +189,25 @@ nav{
     z-index: 5;
 }
 
-.logo{
+.nav-logo{
     max-height: 6rem;
     transition: 0.2s ease-in-out;
     padding: 1rem;
+    font-family: Beckman, sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 0.2rem 0.6rem;
+    border: 4px solid var(--heading-white);
+    font-weight: 600;
+    margin: 1rem 0;
+    letter-spacing: 0.2rem;
+    border-radius: 10%;
 }
 
-.logo:hover{
+.nav-logo:hover{
     scale: 1.05;
-    
+    color: var(--button);
+    border: 5px solid var(--button);
 }
 
 nav ul{
@@ -202,6 +231,15 @@ nav ul a:hover{
     color: var(--button);
     text-decoration-color: var(--button);
     
+}
+
+a:hover{
+    color: var(--button);
+}
+
+.flex{
+    display: flex;
+    gap: 2rem;
 }
 
 .hamburger {
@@ -427,20 +465,6 @@ box-shadow:  20px 20px 60px #050d19,
     width: 45%;
 }
 
-.button-casestudy{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.button-casestudy svg{
-    transition: 0.1s ease-in-out;
-}
-
-.button-casestudy svg:hover{
-    scale: 1.1;
-}
-
 .used-skills-container{
     display: flex;
     flex-wrap: wrap;
@@ -524,19 +548,18 @@ box-shadow:  20px 20px 60px #050d19,
   .verticalBox .logo {
     display: flex;
     flex-direction: column;
-    padding-bottom: 13rem;
+    margin-bottom: 1rem;
   }
   
   .verticalBox .logo svg {
     color: var(--button);
     transition: 0.3s;
-    padding-top: 10px;
+    margin-top: 1rem;
+    scale: 0.9;
   }
   
   .verticalBox .logo svg:hover {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    scale: 1.2;
+    scale: 1.1;
   }
   
   .verticalBox hr {
