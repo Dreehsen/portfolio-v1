@@ -185,21 +185,3 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
-
-// Page transistions
-
-barba.init({
-  transitions: [{
-    name: 'opacity-transition',
-    leave(data) {
-      return gsap.to(data.current.container, {
-        color: blue
-      });
-    },
-    enter(data) {
-      return gsap.from(data.next.container, {
-        opacity: 0
-      });
-    }
-  }]
-});
