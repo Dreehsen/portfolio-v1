@@ -92,6 +92,18 @@ a{
     
 }
 
+.nav-button{
+    border: solid 5px var(--button);
+    color: var(--button);
+    padding: 0.4rem;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 2rem;
+}
+
 .button-no-border{
     color: var(--button);
     padding: 1rem 3rem;
@@ -169,7 +181,7 @@ footer a {
     padding-top: 4rem;
 }
 
-/* Header */
+Header
 
 header{
     padding: 1rem auto;
@@ -186,7 +198,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 5;
+    z-index: 10;
 }
 
 .nav-logo{
@@ -230,7 +242,6 @@ nav ul a{
 nav ul a:hover{
     color: var(--button);
     text-decoration-color: var(--button);
-    
 }
 
 a:hover{
@@ -239,6 +250,8 @@ a:hover{
 
 .flex{
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -259,12 +272,11 @@ a:hover{
 /* Hero */
 
 .hero-text{
-    padding-top: 5rem;
     position: relative;
 }
 
 .underrubrik{
-    max-width: 50%;
+    max-width: 40%;
     margin-bottom: 3rem;
 }
 
@@ -312,7 +324,7 @@ a:hover{
 
     .scroll-chevron{
         position:absolute;
-        width: 80px;
+        width: 8rem;
         left: 50%;
         top:98vh;
         transform:translateY(-100%);
@@ -829,7 +841,7 @@ max-height: 650px;
             padding-top: 15rem;
             transition: 0.3s;
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            z-index: -1;
+            z-index: 1;
         }
     
         .nav-menu.active {
@@ -849,6 +861,7 @@ max-height: 650px;
             display: block;
             cursor: pointer;
             padding: 1rem 1rem 0 0;
+            z-index:10;
         }
 
         .bar{
@@ -900,13 +913,14 @@ max-height: 650px;
 
         .verticalBox {
             position: static;
+            margin-top: 5rem;
           }
           
           .verticalBox .logo {
             display: flex;
             flex-direction: row;
             justify-content: center;
-            gap: 4rem;
+            gap: 5rem;
           }
           
           .verticalBox .logo svg {
@@ -925,5 +939,8 @@ max-height: 650px;
         }
         footer{
             padding-top: 5rem;
+        }
+        .button-no-border{
+            padding: 1rem;
         }
 }
